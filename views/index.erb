@@ -1,0 +1,26 @@
+
+<table style="width:50%">
+<th> Holiday</th><th> Date </th>
+<% @holidays.each do |day| %>
+  <tr>
+    <td><%= day[0]['name'] %></td>
+    <td><%= day[0]['date'] %></td>
+
+
+  </tr>
+<% end %>
+</table>
+<table style="width:50%">
+<th> Holiday</th><th> Country </th><th> Date </th>
+<% @birthyear.each do |day| %>
+
+  <tr>
+
+    <td><%= day[0]['name'] %></td>
+    <td><%= day[0]['country'] %></td>
+    <td><%= day[0]['date'] %></td>
+  </tr>
+
+
+<% end %>
+</table>
